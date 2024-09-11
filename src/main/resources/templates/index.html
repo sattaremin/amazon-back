@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div th:replace="fragments/left-sidebar :: sidebar"></div>
+
+<!--<div class="content">-->
+<!--    &lt;!&ndash; Your main content goes here &ndash;&gt;-->
+<!--    &lt;!&ndash; For example, this could be user list, invoice list, etc. &ndash;&gt;-->
+<!--    <div th:insert="this/::content"></div>-->
+<!--</div>-->
+
+<div th:replace="fragments/footer :: footer"></div>
+<div th:replace="fragments/javascript :: scripts"></div>
+</body>
+</html>

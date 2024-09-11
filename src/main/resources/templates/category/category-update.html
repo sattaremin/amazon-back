@@ -1,0 +1,20 @@
+<<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Update Category</title>
+</head>
+<body>
+<h1>Update Category</h1>
+<form th:action="@{/category/update}" th:object="${category}" method="post">
+    <input type="hidden" th:field="*{id}">
+
+    <label>Category Name:</label>
+    <input type="text" th:field="*{name}" required><br>
+
+    <label>Description:</label>
+    <textarea th:field="*{description}" required></textarea><br>
+
+    <button type="submit">Update</button>
+</form>
+</body>
+</html>
